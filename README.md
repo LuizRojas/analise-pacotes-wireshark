@@ -1,21 +1,32 @@
-# Etapa 1
+# Análise de pacotes com Wireshark
 
-## Consulta
-- IP origem/destino []
-- Porta origem/destino []
-- Protocolo da camada de transporte utilizado []
-- Tamanho do pacote UDP (carga útil + cabeçalho) []
-- Valor da consulta []
-- Tipo de RR consultado (A, MX, NS, CNAME, AAAA) []
+## Etapa 1
 
-## Resposta
-- IP origem/destino []
-- Porta origem/destino []
-- Protocolo da camada de transporte utilizado []
-- Tamanho do pacote UDP (carga útil + cabeçalho) []
-- Resposta da consulta []
-- Tipo de RR respondido (A, MX, NS, CNAME, AAAA) []
+Consulta
 
-# Etapa 2
+- IP origem/destino [192.168.1.133/8.8.8.8]
+- Porta origem/destino [50137/53]
+- Protocolo da camada de transporte utilizado [UDP]
+- Tamanho do pacote UDP (carga útil + cabeçalho) [35 bytes + 20 bytes = 55 bytes]
+- Valor da consulta [i.scdn.co]
+- Tipo de RR consultado (A, MX, NS, CNAME, AAAA) [AAAA]
+
+![Consulta da etapa 1](/images/consulta_etapa1.png "Consulta da etapa 1")
+![Tipo de RR Consultado](/images/consulta_etapa1_tipo_rr.png "RR Consultado")
+
+Resposta
+
+- IP origem/destino [8.8.8.8/192.168.1.133]
+- Porta origem/destino [53/50137]
+- Protocolo da camada de transporte utilizado [UDP]
+- Tamanho do pacote UDP (carga útil + cabeçalho) [159 bytes + 20 bytes = 199 bytes]
+- Resposta da consulta [scdnco.spotify.map.fastly.net possui o endereço IPv6 2a04:4e42:4f::760]
+- Tipo de RR respondido (A, MX, NS, CNAME, AAAA) [CNAME (Canonical Name)]
+
+## Etapa 2
+
+bla bla
 
 ## Sockets UDP e TCP
+
+bla bla
