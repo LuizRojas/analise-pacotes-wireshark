@@ -1,6 +1,6 @@
 from socket import *
-serverName = "HOSTIP"
-serverPort = HOSTPORT
+serverName = "127.0.0.1"
+serverPort = 12000
 addr = (serverName, serverPort)
 clientSocket = socket(AF_INET, SOCK_STREAM)
 clientSocket.connect(addr)

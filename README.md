@@ -26,10 +26,40 @@ Resposta
 ![Resposta da etapa 1](/images/etapa1/resposta/resposta_etapa1.png "RR respondido")
 ![Tipo de RR Respondido](/images/etapa1/resposta/resposta_etapa1_tipo_rr.png "Tipo de RR Respondido")
 
-## Etapa 2
+## Etapa 2 (Sockets UDP e TCP)
 
-bla bla
+### UDP
 
-## Sockets UDP e TCP
+(Pacotes enviados)
+
+- IP origem/destino [127.0.0.1/127.0.0.1]
+- Porta origem/destino [54496/12000]
+- Protocolo da camada de transporte utilizado [UDP]
+- Tamanho do pacote UDP/TCP (Carga útil + cabeçalho) [13 bytes + 20 bytes = 33 bytes]
+
+(Pacotes recebidos)
+
+- IP origem/destino [127.0.0.1/127.0.0.1]
+- Porta origem/destino [12000/54496]
+- Protocolo da camada de transporte utilizado [UDP]
+- Tamanho do pacote UDP/TCP (Carga útil + cabeçalho) [13 bytes + 20 bytes = 33 bytes]
+
+### TCP
+
+(Pacotes enviados)
+
+- IP origem/destino [127.0.0.1/127.0.0.1]
+- Porta origem/destino []
+- Protocolo da camada de transporte utilizado []
+- Tamanho do pacote UDP/TCP (Carga útil + cabeçalho) []
+
+(Pacotes recebidos)
+
+- IP origem/destino []
+- Porta origem/destino []
+- Protocolo da camada de transporte utilizado []
+- Tamanho do pacote UDP/TCP (Carga útil + cabeçalho) []
+
+## Etapa 3 (Socket UDP Pinger)
 
 bla bla

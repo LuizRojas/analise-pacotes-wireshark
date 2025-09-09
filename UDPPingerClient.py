@@ -21,7 +21,7 @@ ptime = 0
 while ptime < 10: 
     ptime += 1
     # Format the message to be sent
-    data = "Ping " + str(ptime) + " " + time.asctime()
+    data = ("Ping " + str(ptime) + " " + time.asctime())
     
     try:
 	# Sent time
@@ -33,13 +33,13 @@ while ptime < 10:
 	# Received time
         RTTa = time.time()
 	# Display the server response as an output
-        print "Reply from " + address[0] + ": " + message       
+        print("Reply from " + address[0] + ": " + message)
 	# Round trip time is the difference between sent and received time
-        print "RTT: " + str(RTTa - RTTb)
+        print("RTT: " + str(RTTa - RTTb))
     except:
         # Server does not response
 	# Assume the packet is lost
-        print "Request timed out."
+        print("Request timed out.")
         continue
 
 # Close the client socket
