@@ -46,19 +46,28 @@ Resposta
 
 ### TCP
 
+Estrutura
+
+![Estrutura](/images/etapa2/tcp/cliente-servidor-tcp.png "Estrutura")
+
 (Pacotes enviados)
 
 - IP origem/destino [127.0.0.1/127.0.0.1]
-- Porta origem/destino []
-- Protocolo da camada de transporte utilizado []
-- Tamanho do pacote UDP/TCP (Carga útil + cabeçalho) []
+- Porta origem/destino [4808/12000]
+- Protocolo da camada de transporte utilizado [TCP]
+- Tamanho do pacote UDP/TCP (Carga útil + cabeçalho) [25 bytes + 20 bytes = 45 bytes]
+
+![Consulta TCP Etapa 2](/images/etapa2/tcp/consulta.png "Consulta TCP")
 
 (Pacotes recebidos)
 
-- IP origem/destino []
-- Porta origem/destino []
-- Protocolo da camada de transporte utilizado []
-- Tamanho do pacote UDP/TCP (Carga útil + cabeçalho) []
+- IP origem/destino [12000]
+- Porta origem/destino [4808]
+- Protocolo da camada de transporte utilizado [TCP]
+- Tamanho do pacote UDP/TCP (Carga útil + cabeçalho) [25 bytes + 20 bytes = 45 bytes]
+
+![Resposta TCP Etapa 2](/images/etapa2/tcp/resposta.png "Resposta TCP")
+
 
 ## Etapa 3 (Socket UDP Pinger)
 
