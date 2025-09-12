@@ -68,7 +68,26 @@ Estrutura
 
 ![Resposta TCP Etapa 2](/images/etapa2/tcp/resposta.png "Resposta TCP")
 
-
 ## Etapa 3 (Socket UDP Pinger)
 
-bla bla
+Estrutura
+
+![Estrutura](/images/etapa3/cliente-servidor-udp-pinger.png "Estrutura")
+
+(Pacote enviado)
+
+- IP origem/destino [127.0.0.1/127.0.0.1]
+- Porta origem/destino [53229/12000]
+- Protocolo da camada de transporte utilizado [UDP]
+- Tamanho do pacote UDP/TCP (Carga útil + cabeçalho) [39 bytes + 20 bytes = 59 bytes]
+
+![Ping](/images/etapa3/ping01.png "Ping")
+
+(Pacote recebido)
+
+- IP origem/destino [127.0.0.1/127.0.0.1]
+- Porta origem/destino [12000/53229]
+- Protocolo da camada de transporte utilizado [UDP]
+- Tamanho do pacote UDP/TCP (Carga útil + cabeçalho) [14 bytes + 20 bytes = 34 bytes]
+
+![Pong](/images/etapa3/pong01.png "Pong")
